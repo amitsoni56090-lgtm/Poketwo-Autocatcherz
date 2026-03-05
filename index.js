@@ -21,7 +21,7 @@ const {
 
 const config = require('./config.json')
 const json = require('./namefix.json');
-const allowedChannels = []; // Add your allowed channel IDs to this array or leave it like [] if you want to it to catch from all channels
+const allowedChannels = [968538494035165214]; // Add your allowed channel IDs to this array or leave it like [] if you want to it to catch from all channels
 let isSleeping = false;
 
 
@@ -67,7 +67,7 @@ client.on('ready', () => {
     console.log("Note: When your using Incense then make sure it occurs in a separate channel where hint bots like pokename/sierra aren't enabled to send message there!")
     console.log("Use $help to know about commands")
 
-    const channel = client.channels.cache.get(config.spamChannelID)
+    const channel = client.channels.cache.get(968538445574201424)
 
     function getRandomInterval(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -304,4 +304,4 @@ client.on('messageCreate', async message => {
         }
     }
 })
-client.login(config.TOKEN) //use process.env.TOKEN if you are using it in repl.it
+client.login(MTAyNjM5MjI2MDk1MjE5OTE3OQ.GXQx3C.4rden-RsJ8WxShlswcaUUxGm7VkwI7fVUx41I8) //use process.env.TOKEN if you are using it in repl.it
